@@ -7,7 +7,7 @@ from config import ADMIN
 async def start_cmd(bot, msg):
     txt="This is personal use bot 🙏. Do you want your own bot? 👇 Click the source code to deploy"
     btn = InlineKeyboardMarkup([[
-        InlineKeyboardButton("🤖 SOURCE CODE", url="https://github.com/MrMKN/Simple-Rename-Bot")
+        InlineKeyboardButton("🤖 SOURCE CODE", url="https://github.com/DrDevAnand/Renamebot")
         ],[
         InlineKeyboardButton("🖥️ How To Deploy", url="https://youtu.be/oc847WvOUaI")
     ]])
@@ -18,9 +18,9 @@ async def start_cmd(bot, msg):
 
 @Client.on_callback_query(filters.regex("start"))
 async def start(bot, msg, cb=True):   
-    txt=f"hai {msg.from_user.mention} i am simple rename bot with personal usage.\nthis bot is made by <b><a href=https://github.com/MrMKN>MrMKN</a></b>"                                     
+    txt=f"hai {msg.from_user.mention} i am simple rename bot with personal usage.\nthis bot is made by <b><a href= https://github.com/DrDevAnand>DrDevAnand</a></b>"                                     
     button= [[
-        InlineKeyboardButton("🤖 Bot Updates", url="https://t.me/mkn_bots_updates")
+        InlineKeyboardButton("🤖 Bot Updates", url="https://t.me/Dr_Devanand")
         ],[
         InlineKeyboardButton("ℹ️ Help", callback_data="help"),
         InlineKeyboardButton("📡 About", callback_data="about") 
